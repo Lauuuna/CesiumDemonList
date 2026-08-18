@@ -1,0 +1,36 @@
+{
+    "name": "Cesium Demon List",
+    "discord": "https://discord.gg/JQWX9EJmcF",
+    "submitRecord": {
+        "enabled": false,
+        "link": "#"
+    },
+    "scoring": {
+        "B1": 714.3,
+        "g": 1.6,
+        "s": 0.4,
+        "d": 0.9
+    },
+    "colors": {
+        "light": {
+            "background": "#ffffff",
+            "on-background": "#000000",
+            "background-hover": "#eeeeee",
+            "on-background-hover": "#000000",
+            "primary": "#2e7d32",
+            "on-primary": "#ffffff",
+            "error": "#de0000",
+            "on-error": "#ffffff"
+        },
+        "dark": {
+            "background": "#1c1b1f",
+            "on-background": "#ffffff",
+            "background-hover": "#27262c",
+            "on-background-hover": "#ffffff",
+            "primary": "#1b5e20",
+            "on-primary": "#ffffff",
+            "error": "#de0000",
+            "on-error": "#ffffff"
+        }
+    }
+}
