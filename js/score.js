@@ -5,11 +5,11 @@ const scale = 1;
 
 /**
  * Fallback / default scoring parameters.
- * B1 is calibrated once (top level of phase 1 ≈ 1000 points) and is NOT
+ * Bottom of the list is calibrated once (top level of phase 1 ≈ 7.1 points) and is NOT
  * recalculated when new (higher) phases are added.
  */
 export const SCORING_DEFAULTS = {
-    B1: 714.3,
+    B1: 7.143,
     g: 1.6,
     s: 0.4,
     d: 0.9,
