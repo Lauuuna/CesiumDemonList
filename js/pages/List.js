@@ -80,7 +80,7 @@ export default {
                                 <p>{{ record.percent }}%</p>
                             </td>
                             <td class="user">
-                                <span class="type-label-lg username" @click="goToPlayer(record.user)">{{ record.user }} <template v-if="flags[record.user]">({{ countryToFlag(flags[record.user]) }})</template></span>
+                                <span class="type-label-lg username" @click="goToPlayer(record.user)"><template v-if="flags[record.user]">{{ countryToFlag(flags[record.user]) }}&nbsp;</template>{{ record.user }}</span>
                             </td>
                             <td class="mobile">
                                 <img v-if="record.mobile" :src="\`assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">

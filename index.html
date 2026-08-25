@@ -37,7 +37,7 @@
     <body id="app">
         <header :class="{ dark: store.dark, 'menu-open': store.mobileMenu }">
             <div class="logo">
-                <h2>{{ store.config.name || 'Sample List' }}</h2>
+                <h2>Cesium Demon List</h2>
             </div>
             <nav class="nav">
                 <div class="nav__tabs">
@@ -66,6 +66,7 @@
                         class="nav__cta type-label-lg"
                         :href="store.config.submitRecord?.link || '#'"
                         target="_blank"
+                        hidden
                         >Submit Record</a
                     >
                 </div>

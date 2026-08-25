@@ -22,8 +22,8 @@ export default {
             <template v-if="selfVerified">
                 <div class="type-title-sm">Creator & Verifier</div>
                 <p class="type-body">
+                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
                     <span>{{ author }}</span>
-                    <template v-if="verifierFlag"> ({{ verifierFlag }})</template>
                 </p>
             </template>
             <template v-else-if="creators.length === 0">
@@ -33,8 +33,8 @@ export default {
                 </p>
                 <div class="type-title-sm">Verifier</div>
                 <p class="type-body">
+                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
                     <span>{{ verifier }}</span>
-                    <template v-if="verifierFlag"> ({{ verifierFlag }})</template>
                 </p>
             </template>
             <template v-else>
@@ -47,8 +47,8 @@ export default {
                 </p>
                 <div class="type-title-sm">Verifier</div>
                 <p class="type-body">
+                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
                     <span>{{ verifier }}</span>
-                    <template v-if="verifierFlag"> ({{ verifierFlag }})</template>
                 </p>
             </template>
             <div class="type-title-sm">Publisher</div>

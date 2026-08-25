@@ -2,13 +2,13 @@
     "id": 10,
     "name": "Pulsar 51",
     "author": "NICEPEEK",
-    "creators": ["RTX_OFF", "NICEPEEK"],
+    "creators": ["NICEPEEK", "RTX_OFF"],
     "verifier": "NICEPEEK",
-    "verification": "https://www.youtube.com/watch?v=ce_fPxt1vSw&t=7s",
-    "tags": ["Timings"],
+    "verification": "https://www.youtube.com/watch?v=ce_fPxt1vSw",
+    "tags": ["Medium", "Circles", "Timings", "Wave"],
     "percentToQualify": 49,
-    "phase": 5,
-    "verifiedDate": "14.07.2026",
+    "phase": 6,
+    "verifiedDate": "13.07.2026",
     "records": [
     ]
 }

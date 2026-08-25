@@ -6,7 +6,12 @@
     },
     {
         "role": "owner",
-        "name": "nicepeek",
+        "name": "NICEPEEK",
         "link": "https://www.youtube.com/@nicepeekGD"
+    },
+    {
+        "role": "dev",
+        "name": "blameworthy",
+        "link": "https://www.youtube.com/@ether3333"
     }
 ]
