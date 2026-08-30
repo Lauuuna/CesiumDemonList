@@ -124,6 +124,7 @@
         gap: 1rem;
         transform: translateX(-100%);
         transition: transform 0.25s ease;
+        user-select: none;
     }
     .nav-mobile.open {
         transform: translateX(0);

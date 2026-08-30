@@ -72,6 +72,7 @@ header {
     background-repeat: repeat;
     animation: scroll 10s linear infinite;
     color: var(--color-on-primary);
+    user-select: none;
 }
 @keyframes scroll {
     0% { background-position: center 0;}
@@ -93,7 +94,6 @@ header .logo {
 header .logo h2 {
     font-family: "Speckqtograph Handwriting";
     font-weight: 700;
-    text-shadow: 2px 2px black;
 }
 .header-actions {
     display: none;

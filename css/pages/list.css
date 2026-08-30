@@ -91,6 +91,9 @@
 .page-list .level-container .level .video {
     aspect-ratio: 16/9;
 }
+.video {
+    user-select: none;
+}
 .page-list .level-container .level .stats {
     display: flex;
     justify-content: space-evenly;
