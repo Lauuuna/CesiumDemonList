@@ -56,8 +56,15 @@ header {
     display: flex;
     padding-inline: calc(25vw - 10rem);
     height: 4rem;
-    background-color: var(--color-primary);
+    background-image: url('/assets/bg.png');
+    background-size: 250px 500px;
+    background-repeat: repeat;
+    animation: scroll 10s linear infinite;
     color: var(--color-on-primary);
+}
+@keyframes scroll {
+    0% { background-position: center 0;}
+    100% { background-position: center 1000px; }
 }
 @media screen and (min-width: 1366px) {
     header {

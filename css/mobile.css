@@ -114,7 +114,9 @@
         width: 75%;
         max-width: 20rem;
         height: 100%;
-        background: var(--color-primary);
+        background-image: url('/assets/bg.png');
+        background-size: 250px 500px;
+        background-repeat: repeat;
         color: var(--color-on-primary);
         z-index: 200;
         padding: 1.5rem;
