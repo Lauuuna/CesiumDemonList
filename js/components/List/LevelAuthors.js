@@ -22,7 +22,7 @@ export default {
             <template v-if="selfVerified">
                 <div class="type-title-sm">Creator & Verifier</div>
                 <p class="type-body">
-                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
+                    <template v-if="verifierFlag">{{ verifierFlag }}&ensp;</template>
                     <span>{{ author }}</span>
                 </p>
             </template>
@@ -33,7 +33,7 @@ export default {
                 </p>
                 <div class="type-title-sm">Verifier</div>
                 <p class="type-body">
-                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
+                    <template v-if="verifierFlag">{{ verifierFlag }}&ensp;</template>
                     <span>{{ verifier }}</span>
                 </p>
             </template>
@@ -47,7 +47,7 @@ export default {
                 </p>
                 <div class="type-title-sm">Verifier</div>
                 <p class="type-body">
-                    <template v-if="verifierFlag">{{ verifierFlag }}&nbsp;</template>
+                    <template v-if="verifierFlag">{{ verifierFlag }}&ensp;</template>
                     <span>{{ verifier }}</span>
                 </p>
             </template>
