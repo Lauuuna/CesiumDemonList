@@ -74,7 +74,7 @@
     gap: 0.5rem;
 }
 .page-list .level-container .level .tags .tag {
-    font-family: "Lexend Deca", sans-serif;
+    font-family: "Lexend Deca", "Nunito Sans";
     font-size: 0.875rem;
     font-weight: 500;
     padding: 0.25rem 0.75rem;
