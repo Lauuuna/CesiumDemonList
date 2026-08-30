@@ -1,3 +1,7 @@
+[v-cloak] {
+    display: none;
+}
+
 @font-face {
     font-family: 'Noto Color Emoji Flags';
     font-display: swap;
@@ -9,7 +13,7 @@
     --color-on-background: black;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
-    --color-primary: #2e7d32;
+    --color-primary: #0066ff;
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
