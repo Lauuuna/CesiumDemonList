@@ -2,13 +2,13 @@
     "id": 8,
     "name": "Storm Cyclone",
     "author": "NICEPEEK",
-    "creators": ["RTX_OFF", "NICEPEEK"],
+    "creators": ["NICEPEEK", "RTX_OFF"],
     "verifier": "sayashyne",
     "verification": "https://www.youtube.com/watch?v=WERvaK1CzA4",
-    "tags": ["Wave", "Timings"],
+    "tags": ["Medium", "Circles", "Timings", "Cube", "Wave"],
     "percentToQualify": 46,
     "phase": 4,
-    "verifiedDate": "31.07.2026",
+    "verifiedDate": "30.07.2026",
     "records": [
     ]
 }

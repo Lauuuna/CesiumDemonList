@@ -41,7 +41,6 @@
     word-break: normal;
     overflow-wrap: anywhere;
     cursor: pointer;
-    transition: background-color 150ms, color 150ms;
 }
 .page-list .list .level.error button {
     color: var(--color-error);
@@ -75,7 +74,7 @@
     gap: 0.5rem;
 }
 .page-list .level-container .level .tags .tag {
-    font-family: "Lexend Deca", sans-serif;
+    font-family: "Lexend Deca", "Nunito Sans";
     font-size: 0.875rem;
     font-weight: 500;
     padding: 0.25rem 0.75rem;
@@ -91,6 +90,9 @@
 }
 .page-list .level-container .level .video {
     aspect-ratio: 16/9;
+}
+.video {
+    user-select: none;
 }
 .page-list .level-container .level .stats {
     display: flex;

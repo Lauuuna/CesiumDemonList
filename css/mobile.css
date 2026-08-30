@@ -61,6 +61,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        flex-shrink: 0;
         height: 3.5rem;
         padding: 0 1rem;
         position: sticky;
@@ -88,7 +89,7 @@
         border: none;
         background: transparent;
         color: var(--color-on-background);
-        font-family: "Lexend Deca", sans-serif;
+        font-family: "Lexend Deca", "Nunito Sans";
         font-size: 0.9rem;
         font-weight: 500;
         cursor: pointer;
@@ -114,13 +115,16 @@
         width: 75%;
         max-width: 20rem;
         height: 100%;
-        background: var(--color-primary);
+        background-image: url("../assets/bg.png");
+        background-size: 250px 500px;
+        background-repeat: repeat;
         color: var(--color-on-primary);
         z-index: 200;
         padding: 1.5rem;
         gap: 1rem;
         transform: translateX(-100%);
         transition: transform 0.25s ease;
+        user-select: none;
     }
     .nav-mobile.open {
         transform: translateX(0);
@@ -148,7 +152,7 @@
         border-radius: 0.5rem;
         text-align: center;
         text-decoration: none;
-        font-family: "Lexend Deca", sans-serif;
+        font-family: "Lexend Deca", "Nunito Sans";
         font-size: 1rem;
         font-weight: 500;
     }

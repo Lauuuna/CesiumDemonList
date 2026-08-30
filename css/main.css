@@ -1,3 +1,20 @@
+[v-cloak] {
+    display: none;
+}
+
+@font-face {
+    font-family: "Speckqtograph Handwriting";
+    src: url("../assets/SpeckqtographHandwriting-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Color Emoji Flags";
+    src: url("https://unpkg.com/noto-color-emoji-flags/dist/noto-color-emoji-flags.woff2") format("woff2");
+    font-display: swap;
+}
+
 :root {
     --color-background: white;
     --color-on-background: black;
@@ -50,8 +67,16 @@ header {
     display: flex;
     padding-inline: calc(25vw - 10rem);
     height: 4rem;
-    background-color: var(--color-primary);
+    background-image: url("../assets/bg.png");
+    background-size: 250px 500px;
+    background-repeat: repeat;
+    animation: scroll 10s linear infinite;
     color: var(--color-on-primary);
+    user-select: none;
+}
+@keyframes scroll {
+    0% { background-position: center 0;}
+    100% { background-position: center 1000px; }
 }
 @media screen and (min-width: 1366px) {
     header {
@@ -65,6 +90,10 @@ header .logo {
     display: flex;
     align-items: flex-end;
     gap: 1rem;
+}
+header .logo h2 {
+    font-family: "Speckqtograph Handwriting";
+    font-weight: 700;
 }
 .header-actions {
     display: none;

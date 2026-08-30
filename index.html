@@ -5,11 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Cesium Demon List</title>
 
-        <link rel="icon" href="list_icon.png" />
+        <link rel="icon" href="ico.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -34,10 +38,10 @@
         <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         <script type="module" src="js/main.js"></script>
     </head>
-    <body id="app">
+    <body id="app" v-cloak>
         <header :class="{ dark: store.dark, 'menu-open': store.mobileMenu }">
             <div class="logo">
-                <h2>{{ store.config.name || 'Sample List' }}</h2>
+                <h2>Cesium Demon List</h2>
             </div>
             <nav class="nav">
                 <div class="nav__tabs">
