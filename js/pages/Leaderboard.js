@@ -42,7 +42,7 @@ export default {
                             </td>
                             <td class="user" :class="{ 'active': selected == i }">
                                 <button @click="selected = i">
-                                    <span class="type-label-lg">&ensp;<template v-if="entry.flag">{{ countryToFlag(ientry.flag) }}&ensp;</template>{{ ientry.user }}</span>
+                                    <span class="type-label-lg"><template v-if="entry.flag">{{ countryToFlag(ientry.flag) }}&ensp;</template>{{ ientry.user }}</span>
                                 </button>
                             </td>
                         </tr>
@@ -51,7 +51,7 @@ export default {
                 <div class="player-container" v-show="!store.mobile || mobileTab === 'player'">
                     <div class="player">
                         <h1>#{{ selected + 1 }}&ensp;<template v-if="entry.flag">{{ countryToFlag(entry.flag) }}&ensp;</template>{{ entry.user }}</h1>
-                        <h3>{{ entry.total }} points</h3>
+                        <h3>{{ localize(entry.total) }} points</h3>
                         <h2 v-if="entry.verified.length > 0">Verified ({{ entry.verified.length}})</h2>
                         <table class="table" v-if="entry.verified.length > 0">
                             <tr v-for="score in entry.verified" :class="{ hardest: score.isHardest }">
@@ -87,7 +87,7 @@ export default {
                                     <p>#{{ score.rank }}</p>
                                 </td>
                                 <td class="level">
-                                    <a class="type-label-lg" target="_blank" :href="score.link">{{ score.percent }}% {{ score.level }}</a>
+                                    <a class="type-label-lg" target="_blank" :href="score.link">{{ score.level }} ({{ score.percent }}%)</a>
                                 </td>
                                 <td class="score">
                                     <p>+{{ localize(score.score) }}</p>

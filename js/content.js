@@ -267,7 +267,7 @@ async function fetchGdlLevel(ingameId) {
         setGdlCache(newCache);
         return placement;
     } catch (e) {
-        console.warn('Failed to fetch Global Demon List position:', e.message);
+        console.warn('Failed to fetch Global Demonlist position:', e.message);
         return null;
     }
 }

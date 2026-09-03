@@ -48,7 +48,7 @@ export default {
                     <h1>
                         {{ level.name }}
                         <span v-if="gdlPlacement && gdlLogo" class="gdl-badge">
-                            ( <img :src="gdlLogo" alt="Global Demon List" class="gdl-logo" />
+                            ( <img :src="gdlLogo" alt="Global Demonlist" class="gdl-logo" />
                             #{{ gdlPlacement }} )
                         </span>
                     </h1>
@@ -167,15 +167,8 @@ export default {
             return this.level ? phaseStyles(this.level.phase) : {};
         },
         video() {
-            if (!this.level.showcase) {
-                return embed(this.level.verification);
-            }
-
-            return embed(
-                this.toggledShowcase
-                    ? this.level.showcase
-                    : this.level.verification
-            );
+            const videoUrl = this.level?.verification || this.level?.showcase || '';
+            return embed(videoUrl);
         },
         gdlPlacement() {
             if (!this.level?.id) return null;

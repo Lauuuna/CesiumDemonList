@@ -48,7 +48,7 @@ export default {
                             <div class="meta">
                                 <p>#{{ level.rank }}</p>
                                 <h2>{{ level.name }}</h2>
-                                <p style="color: #00b54b; font-weight: 700">{{ progression[i] }}%</p>
+                                <p style="color: #00b54b; font-weight: 700;">{{ progression[i] }}%</p>
                             </div>
                         </div>
                         <!-- Current Level -->
@@ -64,7 +64,7 @@ export default {
                             <form class="actions" v-if="!givenUp">
                                 <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
                                 <Btn @click.native.prevent="onDone">Done</Btn>
-                                <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Give Up</Btn>
+                                <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63; box-shadow: 0 1px 0.5rem 0 #e91e63;">Give Up</Btn>
                             </form>
                         </div>
                         <!-- Results -->

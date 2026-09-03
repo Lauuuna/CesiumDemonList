@@ -10,5 +10,17 @@
     "phase": 4,
     "verifiedDate": "30.07.2026",
     "records": [
+        {
+            "user": "NICEPEEK",
+            "link": "https://www.youtube.com/watch?v=6-MEWJW8TJU",
+            "percent": 100,
+            "date": "20.08.2026"
+        },
+        {
+            "user": "blameworthy",
+            "link": "https://www.youtube.com/watch?v=uOYP2u68V9I",
+            "percent": 51,
+            "date": "03.09.2026"
+        }
     ]
 }
